@@ -42,6 +42,7 @@ export default function StoreSwitcher({
     setOpen(false);
     router.push(`/${store.value}`);
   }
+///  const onOpen = useStoreModal((state) => state.onOpen);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -92,6 +93,7 @@ export default function StoreSwitcher({
                             onSelect={() => {
                                 setOpen(false);
                                 storeModal.onOpen();
+                                console.log('test')
                             }}
                         >
                             <PlusCircle className="mr-2 h-5 w-5" />

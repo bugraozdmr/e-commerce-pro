@@ -11,3 +11,6 @@ export ise sadece import {Module}
 
 // dark mod ayarına bak biri icin bu
 route.active ? 'text-black dark:text-white' : 'text-muted-foreground'
+
+ONEMLI !!!!!!!!!!!!!!!
+commanItem  icinde git ve data disable olan yerlerde disable olanları sil !
