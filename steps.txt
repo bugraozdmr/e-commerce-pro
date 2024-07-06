@@ -1,0 +1,13 @@
+Clerk Added
+
+
+planetscale mysql platform
+
+
+with ToastProvider we can have better looking errors & success messages
+
+export default ise direkt import Module
+export ise sadece import {Module}
+
+// dark mod ayarına bak biri icin bu
+route.active ? 'text-black dark:text-white' : 'text-muted-foreground'
