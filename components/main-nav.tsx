@@ -21,22 +21,27 @@ export const MainNav = ({
         {
             href: `/${params.storeId}/categories`,
             label: 'Categories',
-            active : pathName === `/${params.storeId}`
+            active : pathName === `/${params.categories}`
         },
         {
             href: `/${params.storeId}/sizes`,
             label: 'Sizes',
-            active : pathName === `/${params.storeId}`
+            active : pathName === `/${params.sizes}`
         },
         {
             href: `/${params.storeId}/colors`,
             label: 'Colors',
-            active : pathName === `/${params.storeId}`
+            active : pathName === `/${params.colors}`
+        },
+        {
+            href: `/${params.storeId}/products`,
+            label: 'Products',
+            active : pathName === `/${params.products}`
         },
         {
             href: `/${params.storeId}/billboards`,
             label: 'Billboards',
-            active : pathName === `/${params.storeId}`
+            active : pathName === `/${params.billboards}`
         },
         {
             href: `/${params.storeId}/settings`,

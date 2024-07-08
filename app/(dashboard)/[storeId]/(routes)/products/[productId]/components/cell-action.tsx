@@ -15,10 +15,10 @@ import { useState } from "react";
 import axios from "axios";
 
 import { AlertModal } from "@/components/modals/alert-modal";
-import { ColorColumn } from "./columns";
+import { ProductColumn } from "./columns";
 
 interface CellActionProps {
-  data: ColorColumn;
+  data: ProductColumn;
 }
 
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {
@@ -37,14 +37,14 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
     try {
       setLoading(true);
       await axios.delete(
-        `/api/${params.storeId}/colors/${data.id}`
+        `/api/${params.storeId}/products/${data.id}`
       );
       router.refresh();
-      toast.success("Color deleted.");
+      toast.success("Product deleted.");
     } catch (error) {
       console.log(error);
       toast.error(
-        "Make sure you removed all products using this color first"
+        "Something went wrong !"
       );
     } finally {
       setLoading(false);
@@ -77,7 +77,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={() =>
-              router.push(`/${params.store}/colors/${data.id}`)
+              router.push(`/${params.storeId}/products/${data.id}`)
             }
           >
             <Edit className="mr-2 h-4 w-4" />
