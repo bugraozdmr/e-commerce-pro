@@ -24,6 +24,11 @@ export const MainNav = ({
             active : pathName === `/${params.storeId}`
         },
         {
+            href: `/${params.storeId}/sizes`,
+            label: 'Sizes',
+            active : pathName === `/${params.storeId}`
+        },
+        {
             href: `/${params.storeId}/billboards`,
             label: 'Billboards',
             active : pathName === `/${params.storeId}`
