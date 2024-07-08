@@ -14,3 +14,12 @@ route.active ? 'text-black dark:text-white' : 'text-muted-foreground'
 
 ONEMLI !!!!!!!!!!!!!!!
 commanItem  icinde git ve data disable olan yerlerde disable olanları sil !
+
+
+Claudinary kullanılacak
+
+uploadPreset icin git Claudinary upload add upload preset de
+
+Signing mode unsigned de ve çık eklenen preset'i al bitti
+
+VSCODE EXPLORER compact folders -> false yap tiki cek
