@@ -36,3 +36,8 @@ bu linkteki
 https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local
 burası böyle değişcek unutma api lazım
 stripe listen --forward-to localhost:3000/api/webhook
+
+en son bu eklencek package.json'a 
+
+
+"postinstall": "prisma generate"
