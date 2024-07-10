@@ -41,3 +41,15 @@ en son bu eklencek package.json'a
 
 
 "postinstall": "prisma generate"
+
+
+webhooka git enpoint ekle dashbordlinki/api/webhook
+
+add event
+select yap alttan chechkout *> checkkout.session.completed
+
+https://e-commerce-pro-admin.vercel.app/sign-in?redirect_url=https%3A%2F%2Fe-commerce-pro-admin.vercel.app%2F
+
+Reveal ile yeni secreti al ve ver env'e
+
+işlemler sonrası redopley edilmeli vercell

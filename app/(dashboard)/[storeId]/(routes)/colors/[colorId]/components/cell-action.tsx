@@ -28,6 +28,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
   const router = useRouter();
   const params = useParams();
 
+
   const onCopy = (id: string) => {
     navigator.clipboard.writeText(id);
     toast.success("Copied to the clipboard");
@@ -77,7 +78,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={() =>
-              router.push(`/${params.store}/colors/${data.id}`)
+              router.push(`/${params.storeId}/colors/${data.id}`)
             }
           >
             <Edit className="mr-2 h-4 w-4" />
