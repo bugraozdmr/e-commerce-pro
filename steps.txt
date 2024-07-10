@@ -23,3 +23,16 @@ uploadPreset icin git Claudinary upload add upload preset de
 Signing mode unsigned de ve çık eklenen preset'i al bitti
 
 VSCODE EXPLORER compact folders -> false yap tiki cek
+
+-----
+Stripe
+odeme almak icin kullanılacak
+
+developers -> webhooks
+
+
+
+bu linkteki
+https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local
+burası böyle değişcek unutma api lazım
+stripe listen --forward-to localhost:3000/api/webhook

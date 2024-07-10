@@ -9,7 +9,7 @@ const OrdersPage = async ({
     params
 } : {
     params : {storeId : string}
-} ) => {
+} ) => {
     const orders = await prismadb.order.findMany({
         where : {
             storeId : params.storeId
@@ -27,13 +27,15 @@ const OrdersPage = async ({
         }
     });
 
+    
+
     // quantity eklenince ==> return total + Number(item.product.price) * item.quantity
     const formattedOrders : OrderColumn[] = orders.map((item) => ({
         id : item.id,
         phone : item.phone,
-        adress : item.adress,
+        address : item.address,
         products : item.orderItems.map((orderItem) => orderItem.product.name).join(", "),
-        totalPrice : formatter.format(item.orderItems.reduce((total,item) => {
+        totalPrice : formatter.format(item.orderItems.reduce((total,item) => {
             return total + Number(item.product.price)
         },0)),
         isPaid : item.isPaid,

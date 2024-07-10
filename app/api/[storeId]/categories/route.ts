@@ -69,7 +69,7 @@ export async function GET(
     const categories = await prismadb.category.findMany({
       where: {
         storeId: params.storeId,
-      },
+      }
     });
 
     return NextResponse.json(categories);
